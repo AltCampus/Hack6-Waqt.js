@@ -46,7 +46,7 @@ waqt.prototype.differenceInMilliseconds = function(...arr) {
 }
 
 // Get the unit of time between the given dates in days.
-waqt.prototype.differenceInMilliseconds = function(...arr) {
+waqt.prototype.differenceInDays = function(...arr) {
 
 let timeDifference = Date(arr[0]).getTime() - new Date(arr[1].getTime());
 
