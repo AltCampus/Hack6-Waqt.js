@@ -3,7 +3,7 @@ function waqt() {
 }
 
 // It will give you the current datetime
-Date.prototype.now = function(){
+waqt.prototype.now = function(){
   return this;
 }
 
@@ -23,13 +23,13 @@ function max(dateArr) {
 }
 
 // Add the specified number of days to the given date. 
-Date.prototype.addDays = function(...arr){
+waqt.prototype.addDays = function(...arr){
   let newWaqt = arr[0].getTime() + arr[1]*86400*1000; 
   return new Date(newWaqt);
 }
 
 // Subtract the specified number of days from the given date.
-Date.prototype.subDays = function(...arr){
+waqt.prototype.subDays = function(...arr){
   let newWaqt = arr[0].getTime() - arr[1]*86400*1000; 
   return new Date(newWaqt);
 }
@@ -41,4 +41,10 @@ function isSameDay(date1,date2) {
     (date1.getDate() == date2.getDate() ) &&
     (date1.getMonth() == date2.getMonth() ) &&
     (date1.getFullYear() == date2.getFullYear() )	);
+  }
+
+// Return the end of a unit of time for the given date.
+waqt.prototype.endOfDay = function(...arr){
+  let newWaqt = new Date(arr[0].getFullYear(),arr[0].getMonth(),arr[0].getDate(),23,59,59,999) 
+  return new Date(newWaqt);
 }
