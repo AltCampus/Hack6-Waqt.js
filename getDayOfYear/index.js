@@ -4,7 +4,7 @@ const getDayOfYear = function (date = new Date()) {
     let day = date.getDate();
     let month = date.getMonth();
     let totalDays = 0;
-    for (i = 1; i <= month; i++) {
+    for (let i = 1; i <= month; i++) {
       totalDays += Number(new Date(year, i).toJSON().split("T")[0].slice(-2));
     }
     return totalDays+day;
