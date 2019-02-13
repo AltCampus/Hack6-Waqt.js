@@ -11,15 +11,15 @@ Date.prototype.now = function(){
 function min(dateArr) {
   return dateArr.reduce((acc,v) => {
     if(acc < v) acc = v;
-    return v;
-  });
+    return acc;
+  }).toJSON();
 }
 //Maximum of the given dates Returns the maximum (most distant future) of the given date.
 function max(dateArr) {
   return dateArr.reduce((acc, v) => {
     if (acc > v) acc = v;
-    return v;
-  });
+    return acc;
+  }).toJSON();
 }
 
 // Add the specified number of days to the given date. 
