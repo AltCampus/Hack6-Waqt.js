@@ -1,3 +1,3 @@
 function waqt() {
-return new Date;
+  return new Date;
 }
