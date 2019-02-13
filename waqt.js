@@ -2,6 +2,7 @@ function waqt() {
   return new Date;
 }
 
+<<<<<<< HEAD
 // will return current date and time
 waqt.now = function(){
   return new Date;
@@ -24,6 +25,11 @@ waqt.getDayOfYear = function(date = new Date()){
     totalDays += Number(new Date(year,i).toJSON().split("T")[0].slice(-2));
   }
   return totalDays+day;
+=======
+// It will give you the current datetime
+waqt.prototype.now = function(){
+  return this;
+>>>>>>> 428cdfec6800c6c8dcccd9c6cf99728eaafd165d
 }
 
 
@@ -44,18 +50,19 @@ function max(dateArr) {
 }
 
 // Add the specified number of days to the given date. 
-Date.prototype.addDays = function(...arr){
+waqt.prototype.addDays = function(...arr){
   let newWaqt = arr[0].getTime() + arr[1]*86400*1000; 
   return new Date(newWaqt);
 }
 
 // Subtract the specified number of days from the given date.
-Date.prototype.subDays = function(...arr){
+waqt.prototype.subDays = function(...arr){
   let newWaqt = arr[0].getTime() - arr[1]*86400*1000; 
   return new Date(newWaqt);
 }
 
 
+<<<<<<< HEAD
 
 // Gives date in format provided
 function format(date=new Date(), format){
@@ -70,3 +77,23 @@ function format(date=new Date(), format){
     }
   }).join(`${seperator}`)
 }
+=======
+//Is Same Check if a date is the same as another date.
+function isSameDay(date1,date2) {
+  return (
+    (date1.getDate() == date2.getDate() ) &&
+    (date1.getMonth() == date2.getMonth() ) &&
+    (date1.getFullYear() == date2.getFullYear() )	);
+  }
+
+// Return the end of a unit of time for the given date.
+waqt.prototype.endOfDay = function(...arr){
+  let newWaqt = new Date(arr[0].getFullYear(),arr[0].getMonth(),arr[0].getDate(),23,59,59,999) 
+  return new Date(newWaqt);
+}
+
+// Is a Date Check if a variable is a native js Date object.
+function isDate(date) {
+  
+}
+>>>>>>> 428cdfec6800c6c8dcccd9c6cf99728eaafd165d
