@@ -48,3 +48,8 @@ waqt.prototype.endOfDay = function(...arr){
   let newWaqt = new Date(arr[0].getFullYear(),arr[0].getMonth(),arr[0].getDate(),23,59,59,999) 
   return new Date(newWaqt);
 }
+
+// Is a Date Check if a variable is a native js Date object.
+function isDate(date) {
+  
+}
