@@ -33,3 +33,12 @@ Date.prototype.subDays = function(...arr){
   let newWaqt = arr[0].getTime() - arr[1]*86400*1000; 
   return new Date(newWaqt);
 }
+
+
+//Is Same Check if a date is the same as another date.
+function isSameDay(date1,date2) {
+  return (
+    (date1.getDate() == date2.getDate() ) &&
+    (date1.getMonth() == date2.getMonth() ) &&
+    (date1.getFullYear() == date2.getFullYear() )	);
+}
