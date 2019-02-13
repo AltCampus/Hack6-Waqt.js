@@ -51,5 +51,5 @@ waqt.prototype.endOfDay = function(...arr){
 
 // Is a Date Check if a variable is a native js Date object.
 function isDate(date) {
-  
+  return (date && Object.prototype.toString.call(date) === "[object Date]" && !isNaN(date));
 }
