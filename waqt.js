@@ -12,7 +12,7 @@ waqt.getDaysInMonth = function(year, month){
 }
 
 waqt.getDayOfYear = function(date = new Date()){
-  let year = Number(date.toJSON().split("-")[0]);
+  let year = date.getFullYear();
   let day = date.getDate();
   let month = date.getMonth();
   let totalDays = 0;
@@ -21,4 +21,5 @@ waqt.getDayOfYear = function(date = new Date()){
   }
   return totalDays+day;
 }
+
 
