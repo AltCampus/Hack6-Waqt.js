@@ -10,14 +10,14 @@ Date.prototype.now = function(){
 // Minimum of the given dates Returns the minimum (most distant future) of the given date.
 function min(dateArr) {
   return dateArr.reduce((acc,v) => {
-    if(acc < v) acc = v;
+    if(acc > v) acc = v;
     return acc;
   }).toJSON();
 }
 //Maximum of the given dates Returns the maximum (most distant future) of the given date.
 function max(dateArr) {
   return dateArr.reduce((acc, v) => {
-    if (acc > v) acc = v;
+    if (acc < v) acc = v;
     return acc;
   }).toJSON();
 }
