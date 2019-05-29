@@ -1,6 +1,6 @@
 {
   "name": "@abidrahim/waqt",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Parse, manipulate, retrieve and display date and time data with minimal javascript methods",
   "main": "index.js",
   "scripts": {
