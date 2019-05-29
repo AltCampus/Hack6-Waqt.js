@@ -1,7 +1,7 @@
 {
   "name": "@abidrahim/waqt",
-  "version": "0.0.0",
-  "description": "Functions to implement using Date Object.",
+  "version": "1.0.1",
+  "description": "Parse, manipulate, retrieve and display date and time data with minimal javascript methods",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,20 @@
     "type": "git",
     "url": "git+https://github.com/AltCampus/Hack6-Waqt.js.git"
   },
-  "keywords": [],
+  "tags": [
+        "moment",
+        "date-fns",
+        "date",
+        "waqt",
+        "time"
+    ],
+  "keywords": [
+        "moment",
+        "date-fns",
+        "date",
+        "waqt",
+        "time"
+  ],
   "author": "waqtJS team",
   "license": "ISC",
   "bugs": {
