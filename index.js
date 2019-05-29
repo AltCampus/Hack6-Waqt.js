@@ -1,21 +1,18 @@
-module.exports = {
-  addDays: require('./addDays/index.js'),
-  differenceInDays: require('./differenceInDays/index.js'),
-  differenceInMilliseconds: require('./differenceInMilliseconds/index.js'),
-  endOfDay: require('./endOfDay/index.js'),
-  format: require('./format/index.js'),
-  getDay: require('./getDay/index.js'),
-  getDayOfYear: require('./getDayOfYear/index.js'),
-  getDaysInMonth: require('./getDaysInMonth/index.js'),
-  getWeek: require('./getWeek/index.js'),
-  getWeekInYear: require('./getWeekInYear/index.js'),
-  isAfter: require('./isAfter/index.js'),
-  isBefore: require('./isBefore/index.js'),
-  isDate: require('./isDate/index.js'),
-  isFuture: require('./isFuture/index.js'),
-  isSameDay: require('./isSameDay/index.js'),
-  max: require('./max/index.js'),
-  min: require('./min/index.js'),
-  now: require('./now/index.js'),
-  subDays: require('./subDays/index.js'),
-}
+export {default as now} from './src/now';
+export {default as addDays} from './src/addDays';
+export {default as differenceInDays} from './src/differenceInDays';
+export {default as differenceInMilliseconds} from './src/differenceInMilliseconds';
+export {default as endOfDay} from './src/endOfDay';
+export {default as format} from './src/format';
+export {default as getDay} from './src/getDay';
+export {default as getDayOfYear} from './src/getDayOfYear';
+export {default as getDaysInMonth} from './src/getDaysInMonth';
+export {default as getWeek} from './src/getWeek';
+export {default as getWeekInYear} from './src/getWeekInYear';
+export {default as isAfter} from './src/isAfter';
+export {default as isBefore} from './src/isBefore';
+export {default as isDate} from './src/isDate';
+export {default as isFuture} from './src/isFuture';
+export {default as isSameDay} from './src/isSameDay';
+export {default as max} from './src/max';
+export {default as subDays} from './src/subDays';

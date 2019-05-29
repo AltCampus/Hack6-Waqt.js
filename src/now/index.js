@@ -1,6 +1,6 @@
 // will return current date and time
-const now = function () {
+function now() {
     return new Date;
-  }
+  };
 
 export default now;
